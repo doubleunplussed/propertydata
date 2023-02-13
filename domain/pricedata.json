@@ -1,0 +1,1366 @@
+{
+    "2016-12": {
+        "Adelaide": {
+            "houses_final": 505794,
+            "units_final": 302079
+        },
+        "Brisbane": {
+            "houses_final": 539839,
+            "units_final": 391632
+        },
+        "Canberra": {
+            "houses_final": 669887,
+            "units_final": 404014
+        },
+        "Combined Capitals": {
+            "houses_final": 783785,
+            "units_final": 552050
+        },
+        "Darwin": {
+            "houses_final": 581802,
+            "units_final": 471225
+        },
+        "Hobart": {
+            "houses_final": 371693,
+            "units_final": 266567
+        },
+        "Melbourne": {
+            "houses_final": 811515,
+            "units_final": 472838
+        },
+        "Perth": {
+            "houses_final": 571303,
+            "units_final": 382067
+        },
+        "Sydney": {
+            "houses_final": 1120541,
+            "units_final": 708791
+        }
+    },
+    "2017-03": {
+        "Adelaide": {
+            "houses_final": 520194,
+            "houses_prelim": 514853,
+            "units_final": NaN,
+            "units_prelim": 302079
+        },
+        "Brisbane": {
+            "houses_final": 546728,
+            "houses_prelim": 532504,
+            "units_final": NaN,
+            "units_prelim": 376760
+        },
+        "Canberra": {
+            "houses_final": 696175,
+            "houses_prelim": 705059,
+            "units_final": NaN,
+            "units_prelim": 401661
+        },
+        "Combined Capitals": {
+            "houses_final": 804924,
+            "houses_prelim": 801204,
+            "units_final": NaN,
+            "units_prelim": 558824
+        },
+        "Darwin": {
+            "houses_final": 628629,
+            "houses_prelim": 598914,
+            "units_final": NaN,
+            "units_prelim": 395473
+        },
+        "Hobart": {
+            "houses_final": 388011,
+            "houses_prelim": 389625,
+            "units_final": NaN,
+            "units_prelim": 294493
+        },
+        "Melbourne": {
+            "houses_final": 836437,
+            "houses_prelim": 843674,
+            "units_final": NaN,
+            "units_prelim": 494589
+        },
+        "Perth": {
+            "houses_final": 566221,
+            "houses_prelim": 561165,
+            "units_final": NaN,
+            "units_prelim": 368791
+        },
+        "Sydney": {
+            "houses_final": 1159860,
+            "houses_prelim": 1151565,
+            "units_final": NaN,
+            "units_prelim": 717899
+        }
+    },
+    "2017-06": {
+        "Adelaide": {
+            "houses_final": 520846,
+            "houses_prelim": 524968,
+            "units_final": 308223,
+            "units_prelim": NaN
+        },
+        "Brisbane": {
+            "houses_final": 552874,
+            "houses_prelim": 546043,
+            "units_final": 390407,
+            "units_prelim": NaN
+        },
+        "Canberra": {
+            "houses_final": 693962,
+            "houses_prelim": 723299,
+            "units_final": 419451,
+            "units_prelim": NaN
+        },
+        "Combined Capitals": {
+            "houses_final": 823381,
+            "houses_prelim": 818416,
+            "units_final": 570277,
+            "units_prelim": NaN
+        },
+        "Darwin": {
+            "houses_final": 615670,
+            "houses_prelim": 666686,
+            "units_final": 354584,
+            "units_prelim": NaN
+        },
+        "Hobart": {
+            "houses_final": 392170,
+            "houses_prelim": 404522,
+            "units_final": 304077,
+            "units_prelim": NaN
+        },
+        "Melbourne": {
+            "houses_final": 869598,
+            "houses_prelim": 865712,
+            "units_final": 489472,
+            "units_prelim": NaN
+        },
+        "Perth": {
+            "houses_final": 561391,
+            "houses_prelim": 555788,
+            "units_final": 377132,
+            "units_prelim": NaN
+        },
+        "Sydney": {
+            "houses_final": 1190677,
+            "houses_prelim": 1178417,
+            "units_final": 738227,
+            "units_prelim": NaN
+        }
+    },
+    "2017-09": {
+        "Adelaide": {
+            "houses_final": 518037,
+            "houses_prelim": 519517,
+            "units_final": 320825,
+            "units_prelim": 313074
+        },
+        "Brisbane": {
+            "houses_final": 552398,
+            "houses_prelim": 551840,
+            "units_final": 394639,
+            "units_prelim": 376685
+        },
+        "Canberra": {
+            "houses_final": 717302,
+            "houses_prelim": 723980,
+            "units_final": 425650,
+            "units_prelim": 427391
+        },
+        "Combined Capitals": {
+            "houses_final": 802123,
+            "houses_prelim": 819455,
+            "units_final": 555943,
+            "units_prelim": 570148
+        },
+        "Darwin": {
+            "houses_final": 580951,
+            "houses_prelim": 593329,
+            "units_final": 361583,
+            "units_prelim": 330354
+        },
+        "Hobart": {
+            "houses_final": 403201,
+            "houses_prelim": 409592,
+            "units_final": 321056,
+            "units_prelim": 323174
+        },
+        "Melbourne": {
+            "houses_final": 875819,
+            "houses_prelim": 880902,
+            "units_final": 492170,
+            "units_prelim": 506334
+        },
+        "Perth": {
+            "houses_final": 554875,
+            "houses_prelim": 554095,
+            "units_final": 365708,
+            "units_prelim": 351875
+        },
+        "Sydney": {
+            "houses_final": 1173741,
+            "houses_prelim": 1167516,
+            "units_final": 739741,
+            "units_prelim": 732321
+        }
+    },
+    "2017-12": {
+        "Adelaide": {
+            "houses_final": 529498,
+            "houses_prelim": 522815,
+            "units_final": 316851,
+            "units_prelim": 315794
+        },
+        "Brisbane": {
+            "houses_final": 560312,
+            "houses_prelim": 548918,
+            "units_final": 397475,
+            "units_prelim": 385955
+        },
+        "Canberra": {
+            "houses_final": 721848,
+            "houses_prelim": 753516,
+            "units_final": 420114,
+            "units_prelim": 426124
+        },
+        "Combined Capitals": {
+            "houses_final": 818671,
+            "houses_prelim": 813024,
+            "units_final": 560341,
+            "units_prelim": 557794
+        },
+        "Darwin": {
+            "houses_final": 562036,
+            "houses_prelim": 565696,
+            "units_final": 367458,
+            "units_prelim": 395279
+        },
+        "Hobart": {
+            "houses_final": 438600,
+            "houses_prelim": 443521,
+            "units_final": 345580,
+            "units_prelim": 318467
+        },
+        "Melbourne": {
+            "houses_final": 913162,
+            "houses_prelim": 903859,
+            "units_final": 502172,
+            "units_prelim": 506079
+        },
+        "Perth": {
+            "houses_final": 564820,
+            "houses_prelim": 557567,
+            "units_final": 364466,
+            "units_prelim": 369402
+        },
+        "Sydney": {
+            "houses_final": 1181302,
+            "houses_prelim": 1179519,
+            "units_final": 743481,
+            "units_prelim": 736879
+        }
+    },
+    "2018-03": {
+        "Adelaide": {
+            "houses_final": 537343,
+            "houses_prelim": 533525,
+            "units_final": 319140,
+            "units_prelim": 316851
+        },
+        "Brisbane": {
+            "houses_final": 566668,
+            "houses_prelim": 557214,
+            "units_final": 383647,
+            "units_prelim": 380196
+        },
+        "Canberra": {
+            "houses_final": 726432,
+            "houses_prelim": 727914,
+            "units_final": 420619,
+            "units_prelim": 411004
+        },
+        "Combined Capitals": {
+            "houses_final": 809982,
+            "houses_prelim": 809201,
+            "units_final": 556593,
+            "units_prelim": 555574
+        },
+        "Darwin": {
+            "houses_final": 516040,
+            "houses_prelim": 520074,
+            "units_final": 317544,
+            "units_prelim": 308999
+        },
+        "Hobart": {
+            "houses_final": 443085,
+            "houses_prelim": 450349,
+            "units_final": 348719,
+            "units_prelim": 325944
+        },
+        "Melbourne": {
+            "houses_final": 898029,
+            "houses_prelim": 914518,
+            "units_final": 498917,
+            "units_prelim": 505861
+        },
+        "Perth": {
+            "houses_final": 558631,
+            "houses_prelim": 553486,
+            "units_final": 366424,
+            "units_prelim": 351048
+        },
+        "Sydney": {
+            "houses_final": 1159945,
+            "houses_prelim": 1150357,
+            "units_final": 740992,
+            "units_prelim": 740041
+        }
+    },
+    "2018-06": {
+        "Adelaide": {
+            "houses_final": 537028,
+            "houses_prelim": 534832,
+            "units_final": 312003,
+            "units_prelim": 312992
+        },
+        "Brisbane": {
+            "houses_final": 569539,
+            "houses_prelim": 566322,
+            "units_final": 391853,
+            "units_prelim": 379186
+        },
+        "Canberra": {
+            "houses_final": 740215,
+            "houses_prelim": 749865,
+            "units_final": 427564,
+            "units_prelim": 415414
+        },
+        "Combined Capitals": {
+            "houses_final": 802846,
+            "houses_prelim": 802077,
+            "units_final": 558024,
+            "units_prelim": 554504
+        },
+        "Darwin": {
+            "houses_final": 530799,
+            "houses_prelim": 539497,
+            "units_final": 320652,
+            "units_prelim": 326126
+        },
+        "Hobart": {
+            "houses_final": 461402,
+            "houses_prelim": 461547,
+            "units_final": 367202,
+            "units_prelim": 370085
+        },
+        "Melbourne": {
+            "houses_final": 887985,
+            "houses_prelim": 882082,
+            "units_final": 504184,
+            "units_prelim": 496021
+        },
+        "Perth": {
+            "houses_final": 557821,
+            "houses_prelim": 556572,
+            "units_final": 373536,
+            "units_prelim": 379038
+        },
+        "Sydney": {
+            "houses_final": 1137308,
+            "houses_prelim": 1144217,
+            "units_final": 740003,
+            "units_prelim": 737080
+        }
+    },
+    "2018-09": {
+        "Adelaide": {
+            "houses_final": 537225,
+            "houses_prelim": 535527,
+            "units_final": 313796,
+            "units_prelim": 316163
+        },
+        "Brisbane": {
+            "houses_final": 567081,
+            "houses_prelim": 567376,
+            "units_final": 389548,
+            "units_prelim": 376972
+        },
+        "Canberra": {
+            "houses_final": 738262,
+            "houses_prelim": 740215,
+            "units_final": 428003,
+            "units_prelim": 412888
+        },
+        "Combined Capitals": {
+            "houses_final": 780356,
+            "houses_prelim": 781787,
+            "units_final": 546901,
+            "units_prelim": 549163
+        },
+        "Darwin": {
+            "houses_final": 516837,
+            "houses_prelim": 519260,
+            "units_final": 323029,
+            "units_prelim": 312456
+        },
+        "Hobart": {
+            "houses_final": 467171,
+            "houses_prelim": 478491,
+            "units_final": 351990,
+            "units_prelim": 352111
+        },
+        "Melbourne": {
+            "houses_final": 851441,
+            "houses_prelim": 852980,
+            "units_final": 487914,
+            "units_prelim": 496260
+        },
+        "Perth": {
+            "houses_final": 546281,
+            "houses_prelim": 544609,
+            "units_final": 363238,
+            "units_prelim": 347089
+        },
+        "Sydney": {
+            "houses_final": 1097373,
+            "houses_prelim": 1101532,
+            "units_final": 726271,
+            "units_prelim": 734775
+        }
+    },
+    "2018-12": {
+        "Adelaide": {
+            "houses_final": 542740,
+            "houses_prelim": 537971,
+            "units_final": 319252,
+            "units_prelim": 321430
+        },
+        "Brisbane": {
+            "houses_final": 569893,
+            "houses_prelim": 566058,
+            "units_final": 387280,
+            "units_prelim": 369882
+        },
+        "Canberra": {
+            "houses_final": 729027,
+            "houses_prelim": 738933,
+            "units_final": 440815,
+            "units_prelim": 412718
+        },
+        "Combined Capitals": {
+            "houses_final": 765159,
+            "houses_prelim": 766438,
+            "units_final": 538319,
+            "units_prelim": 530999
+        },
+        "Darwin": {
+            "houses_final": 514876,
+            "houses_prelim": 514876,
+            "units_final": 321990,
+            "units_prelim": 321990
+        },
+        "Hobart": {
+            "houses_final": 464029,
+            "houses_prelim": 479685,
+            "units_final": 354204,
+            "units_prelim": 342796
+        },
+        "Melbourne": {
+            "houses_final": 829794,
+            "houses_prelim": 833321,
+            "units_final": 480790,
+            "units_prelim": 479306
+        },
+        "Perth": {
+            "houses_final": 543482,
+            "houses_prelim": 546281,
+            "units_final": 351334,
+            "units_prelim": 351818
+        },
+        "Sydney": {
+            "houses_final": 1060319,
+            "houses_prelim": 1062619,
+            "units_final": 710911,
+            "units_prelim": 702012
+        }
+    },
+    "2019-03": {
+        "Adelaide": {
+            "houses_final": 541143,
+            "houses_prelim": 542474,
+            "units_final": 311356,
+            "units_prelim": 312459
+        },
+        "Brisbane": {
+            "houses_final": 566829,
+            "houses_prelim": 563666,
+            "units_final": 380015,
+            "units_prelim": 372852
+        },
+        "Canberra": {
+            "houses_final": 730982,
+            "houses_prelim": 722440,
+            "units_final": 454999,
+            "units_prelim": 426719
+        },
+        "Combined Capitals": {
+            "houses_final": 753706,
+            "houses_prelim": 748217,
+            "units_final": 532221,
+            "units_prelim": 526130
+        },
+        "Darwin": {
+            "houses_final": 514546,
+            "houses_prelim": 514546,
+            "units_final": 313462,
+            "units_prelim": 313462
+        },
+        "Hobart": {
+            "houses_final": 470892,
+            "houses_prelim": 478247,
+            "units_final": 380996,
+            "units_prelim": 363418
+        },
+        "Melbourne": {
+            "houses_final": 815530,
+            "houses_prelim": 809468,
+            "units_final": 491131,
+            "units_prelim": 466892
+        },
+        "Perth": {
+            "houses_final": 538722,
+            "houses_prelim": 529997,
+            "units_final": 348405,
+            "units_prelim": 347596
+        },
+        "Sydney": {
+            "houses_final": 1036291,
+            "houses_prelim": 1027962,
+            "units_final": 691434,
+            "units_prelim": 696935
+        }
+    },
+    "2019-06": {
+        "Adelaide": {
+            "houses_final": 542058,
+            "houses_prelim": 540473,
+            "units_final": 319421,
+            "units_prelim": 310642
+        },
+        "Brisbane": {
+            "houses_final": 568521,
+            "houses_prelim": 559167,
+            "units_final": 388316,
+            "units_prelim": 368382
+        },
+        "Canberra": {
+            "houses_final": 744104,
+            "houses_prelim": 741947,
+            "units_final": 452321,
+            "units_prelim": 448737
+        },
+        "Combined Capitals": {
+            "houses_final": 753556,
+            "houses_prelim": 750721,
+            "units_final": 529872,
+            "units_prelim": 530959
+        },
+        "Darwin": {
+            "houses_final": 516715,
+            "houses_prelim": 502521,
+            "units_final": 305014,
+            "units_prelim": 298438
+        },
+        "Hobart": {
+            "houses_final": 476715,
+            "houses_prelim": 474423,
+            "units_final": 388995,
+            "units_prelim": 356751
+        },
+        "Melbourne": {
+            "houses_final": 821524,
+            "houses_prelim": 818237,
+            "units_final": 502444,
+            "units_prelim": 501009
+        },
+        "Perth": {
+            "houses_final": 532381,
+            "houses_prelim": 528186,
+            "units_final": 335433,
+            "units_prelim": 342930
+        },
+        "Sydney": {
+            "houses_final": 1030230,
+            "houses_prelim": 1032338,
+            "units_final": 677526,
+            "units_prelim": 688652
+        }
+    },
+    "2019-09": {
+        "Adelaide": {
+            "houses_final": 536186,
+            "houses_prelim": 538550,
+            "units_final": 310601,
+            "units_prelim": 302756
+        },
+        "Brisbane": {
+            "houses_final": 570524,
+            "houses_prelim": 562847,
+            "units_final": 390874,
+            "units_prelim": 375179
+        },
+        "Canberra": {
+            "houses_final": 734852,
+            "houses_prelim": 738864,
+            "units_final": 438016,
+            "units_prelim": 432252
+        },
+        "Combined Capitals": {
+            "houses_final": 776891,
+            "houses_prelim": 773635,
+            "units_final": 546418,
+            "units_prelim": 539256
+        },
+        "Darwin": {
+            "houses_final": 524984,
+            "houses_prelim": 521651,
+            "units_final": 302679,
+            "units_prelim": 294951
+        },
+        "Hobart": {
+            "houses_final": 489093,
+            "houses_prelim": 482960,
+            "units_final": 382773,
+            "units_prelim": 395715
+        },
+        "Melbourne": {
+            "houses_final": 858745,
+            "houses_prelim": 855428,
+            "units_final": 520464,
+            "units_prelim": 520940
+        },
+        "Perth": {
+            "houses_final": 533153,
+            "houses_prelim": 527107,
+            "units_final": 349885,
+            "units_prelim": 344672
+        },
+        "Sydney": {
+            "houses_final": 1081013,
+            "houses_prelim": 1079491,
+            "units_final": 705185,
+            "units_prelim": 694840
+        }
+    },
+    "2019-12": {
+        "Adelaide": {
+            "houses_final": 542418,
+            "houses_prelim": 542947,
+            "units_final": 310706,
+            "units_prelim": 306327
+        },
+        "Brisbane": {
+            "houses_final": 581077,
+            "houses_prelim": 577664,
+            "units_final": 390309,
+            "units_prelim": 377549
+        },
+        "Canberra": {
+            "houses_final": 776363,
+            "houses_prelim": 788621,
+            "units_final": 465112,
+            "units_prelim": 455537
+        },
+        "Combined Capitals": {
+            "houses_final": 806325,
+            "houses_prelim": 809349,
+            "units_final": 564925,
+            "units_prelim": 565024
+        },
+        "Darwin": {
+            "houses_final": 488326,
+            "houses_prelim": 509452,
+            "units_final": 285827,
+            "units_prelim": 286249
+        },
+        "Hobart": {
+            "houses_final": 503125,
+            "houses_prelim": 530570,
+            "units_final": 431842,
+            "units_prelim": 441104
+        },
+        "Melbourne": {
+            "houses_final": 900551,
+            "houses_prelim": 901951,
+            "units_final": 556428,
+            "units_prelim": 549701
+        },
+        "Perth": {
+            "houses_final": 527323,
+            "houses_prelim": 537013,
+            "units_final": 342959,
+            "units_prelim": 342708
+        },
+        "Sydney": {
+            "houses_final": 1139281,
+            "houses_prelim": 1142212,
+            "units_final": 725377,
+            "units_prelim": 735387
+        }
+    },
+    "2020-03": {
+        "Adelaide": {
+            "houses_final": 552031,
+            "houses_prelim": 542418,
+            "units_final": 328928,
+            "units_prelim": 323846
+        },
+        "Brisbane": {
+            "houses_final": 590930,
+            "houses_prelim": 584778,
+            "units_final": 391359,
+            "units_prelim": 374054
+        },
+        "Canberra": {
+            "houses_final": 786888,
+            "houses_prelim": 779050,
+            "units_final": 459772,
+            "units_prelim": 441055
+        },
+        "Combined Capitals": {
+            "houses_final": 820685,
+            "houses_prelim": 819860,
+            "units_final": 573636,
+            "units_prelim": 570229
+        },
+        "Darwin": {
+            "houses_final": 521574,
+            "houses_prelim": 494281,
+            "units_final": 250630,
+            "units_prelim": 262562
+        },
+        "Hobart": {
+            "houses_final": 521843,
+            "houses_prelim": 514097,
+            "units_final": 435842,
+            "units_prelim": 431842
+        },
+        "Melbourne": {
+            "houses_final": 913277,
+            "houses_prelim": 918350,
+            "units_final": 546818,
+            "units_prelim": 554306
+        },
+        "Perth": {
+            "houses_final": 530358,
+            "houses_prelim": 527322,
+            "units_final": 351353,
+            "units_prelim": 348535
+        },
+        "Sydney": {
+            "houses_final": 1165993,
+            "houses_prelim": 1168806,
+            "units_final": 749741,
+            "units_prelim": 744672
+        }
+    },
+    "2020-06": {
+        "Adelaide": {
+            "houses_final": 549574,
+            "houses_prelim": 553036,
+            "units_final": 317593,
+            "units_prelim": 319266
+        },
+        "Brisbane": {
+            "houses_final": 594173,
+            "houses_prelim": 582847,
+            "units_final": 377297,
+            "units_prelim": 375285
+        },
+        "Canberra": {
+            "houses_final": 789905,
+            "houses_prelim": 819090,
+            "units_final": 456656,
+            "units_prelim": 453750
+        },
+        "Combined Capitals": {
+            "houses_final": 804545,
+            "houses_prelim": 804602,
+            "units_final": 561038,
+            "units_prelim": 560838
+        },
+        "Darwin": {
+            "houses_final": 505896,
+            "houses_prelim": 516213,
+            "units_final": 312319,
+            "units_prelim": 241461
+        },
+        "Hobart": {
+            "houses_final": 519705,
+            "houses_prelim": 529388,
+            "units_final": 423310,
+            "units_prelim": 429464
+        },
+        "Melbourne": {
+            "houses_final": 876097,
+            "houses_prelim": 881369,
+            "units_final": 537404,
+            "units_prelim": 537345
+        },
+        "Perth": {
+            "houses_final": 531557,
+            "houses_prelim": 522414,
+            "units_final": 333599,
+            "units_prelim": 334284
+        },
+        "Sydney": {
+            "houses_final": 1141097,
+            "houses_prelim": 1143012,
+            "units_final": 733753,
+            "units_prelim": 735417
+        }
+    },
+    "2020-09": {
+        "Adelaide": {
+            "houses_final": 562656,
+            "houses_prelim": 564927,
+            "units_final": 350122,
+            "units_prelim": 331553
+        },
+        "Brisbane": {
+            "houses_final": 611606,
+            "houses_prelim": 596316,
+            "units_final": 399814,
+            "units_prelim": 383585
+        },
+        "Canberra": {
+            "houses_final": 804120,
+            "houses_prelim": 817810,
+            "units_final": 471299,
+            "units_prelim": 447143
+        },
+        "Combined Capitals": {
+            "houses_final": 819112,
+            "houses_prelim": 811966,
+            "units_final": 566677,
+            "units_prelim": 561518
+        },
+        "Darwin": {
+            "houses_final": 521712,
+            "houses_prelim": 539463,
+            "units_final": 283893,
+            "units_prelim": 326268
+        },
+        "Hobart": {
+            "houses_final": 531594,
+            "houses_prelim": 555754,
+            "units_final": 428306,
+            "units_prelim": 384672
+        },
+        "Melbourne": {
+            "houses_final": 888985,
+            "houses_prelim": 875980,
+            "units_final": 545581,
+            "units_prelim": 536659
+        },
+        "Perth": {
+            "houses_final": 546560,
+            "houses_prelim": 534336,
+            "units_final": 339614,
+            "units_prelim": 335869
+        },
+        "Sydney": {
+            "houses_final": 1156090,
+            "houses_prelim": 1154406,
+            "units_final": 728535,
+            "units_prelim": 732423
+        }
+    },
+    "2020-12": {
+        "Adelaide": {
+            "houses_final": 578449,
+            "houses_prelim": 574264,
+            "units_final": 340281,
+            "units_prelim": 350122
+        },
+        "Brisbane": {
+            "houses_final": 622657,
+            "houses_prelim": 616387,
+            "units_final": 400556,
+            "units_prelim": 395218
+        },
+        "Canberra": {
+            "houses_final": 845804,
+            "houses_prelim": 855530,
+            "units_final": 497973,
+            "units_prelim": 485410
+        },
+        "Combined Capitals": {
+            "houses_final": 850979,
+            "houses_prelim": 852940,
+            "units_final": 574253,
+            "units_prelim": 574245
+        },
+        "Darwin": {
+            "houses_final": 508104,
+            "houses_prelim": 533845,
+            "units_final": 298976,
+            "units_prelim": 285539
+        },
+        "Hobart": {
+            "houses_final": 559203,
+            "houses_prelim": 564091,
+            "units_final": 434054,
+            "units_prelim": 432552
+        },
+        "Melbourne": {
+            "houses_final": 929453,
+            "houses_prelim": 936073,
+            "units_final": 556725,
+            "units_prelim": 569677
+        },
+        "Perth": {
+            "houses_final": 564854,
+            "houses_prelim": 563214,
+            "units_final": 357339,
+            "units_prelim": 347585
+        },
+        "Sydney": {
+            "houses_final": 1206127,
+            "houses_prelim": 1211488,
+            "units_final": 734700,
+            "units_prelim": 729840
+        }
+    },
+    "2021-03": {
+        "Adelaide": {
+            "houses_final": 597187,
+            "houses_prelim": 599706,
+            "units_final": 337932,
+            "units_prelim": 344062
+        },
+        "Brisbane": {
+            "houses_final": 645718,
+            "houses_prelim": 632999,
+            "units_final": 396039,
+            "units_prelim": 398612
+        },
+        "Canberra": {
+            "houses_final": 919900,
+            "houses_prelim": 927577,
+            "units_final": 486512,
+            "units_prelim": 473304
+        },
+        "Combined Capitals": {
+            "houses_final": 903471,
+            "houses_prelim": 899509,
+            "units_final": 588957,
+            "units_prelim": 584340
+        },
+        "Darwin": {
+            "houses_final": 559022,
+            "houses_prelim": 554295,
+            "units_final": 298624,
+            "units_prelim": 293731
+        },
+        "Hobart": {
+            "houses_final": 606275,
+            "houses_prelim": 601567,
+            "units_final": 429287,
+            "units_prelim": 430716
+        },
+        "Melbourne": {
+            "houses_final": 982382,
+            "houses_prelim": 974397,
+            "units_final": 568475,
+            "units_prelim": 568793
+        },
+        "Perth": {
+            "houses_final": 589687,
+            "houses_prelim": 578612,
+            "units_final": 377073,
+            "units_prelim": 371445
+        },
+        "Sydney": {
+            "houses_final": 1303185,
+            "houses_prelim": 1309195,
+            "units_final": 761993,
+            "units_prelim": 751038
+        }
+    },
+    "2021-06": {
+        "Adelaide": {
+            "houses_final": 632337,
+            "houses_prelim": 629728,
+            "units_final": 340586,
+            "units_prelim": 337932
+        },
+        "Brisbane": {
+            "houses_final": 673176,
+            "houses_prelim": 678236,
+            "units_final": 398538,
+            "units_prelim": 394287
+        },
+        "Canberra": {
+            "houses_final": 1015833,
+            "houses_prelim": 1015833,
+            "units_final": 504217,
+            "units_prelim": 504217
+        },
+        "Combined Capitals": {
+            "houses_final": 961182,
+            "houses_prelim": 955927,
+            "units_final": 603435,
+            "units_prelim": 601482
+        },
+        "Darwin": {
+            "houses_final": 608760,
+            "houses_prelim": 608519,
+            "units_final": 364187,
+            "units_prelim": NaN
+        },
+        "Hobart": {
+            "houses_final": 631630,
+            "houses_prelim": 646301,
+            "units_final": 532284,
+            "units_prelim": NaN
+        },
+        "Melbourne": {
+            "houses_final": 1021790,
+            "houses_prelim": 1022927,
+            "units_final": 575133,
+            "units_prelim": 572793
+        },
+        "Perth": {
+            "houses_final": 602248,
+            "houses_prelim": 595823,
+            "units_final": 376029,
+            "units_prelim": 370571
+        },
+        "Sydney": {
+            "houses_final": 1432901,
+            "houses_prelim": 1410133,
+            "units_final": 783781,
+            "units_prelim": 786175
+        }
+    },
+    "2021-09": {
+        "Adelaide": {
+            "houses_final": 673852,
+            "houses_prelim": 667888,
+            "units_final": 363868,
+            "units_prelim": 357615
+        },
+        "Brisbane": {
+            "houses_final": 715342,
+            "houses_prelim": 702455,
+            "units_final": 407986,
+            "units_prelim": 396609
+        },
+        "Canberra": {
+            "houses_final": 1059204,
+            "houses_prelim": 1074187,
+            "units_final": 564570,
+            "units_prelim": 489710
+        },
+        "Combined Capitals": {
+            "houses_final": 1001222,
+            "houses_prelim": 994579,
+            "units_final": 610177,
+            "units_prelim": 609642
+        },
+        "Darwin": {
+            "houses_final": 645487,
+            "houses_prelim": 640068,
+            "units_final": 320470,
+            "units_prelim": 359903
+        },
+        "Hobart": {
+            "houses_final": 691743,
+            "houses_prelim": 698212,
+            "units_final": 561513,
+            "units_prelim": 532284
+        },
+        "Melbourne": {
+            "houses_final": 1040863,
+            "houses_prelim": 1037923,
+            "units_final": 571310,
+            "units_prelim": 576879
+        },
+        "Perth": {
+            "houses_final": 601493,
+            "houses_prelim": 598601,
+            "units_final": 373039,
+            "units_prelim": 363653
+        },
+        "Sydney": {
+            "houses_final": 1511122,
+            "houses_prelim": 1499126,
+            "units_final": 795131,
+            "units_prelim": 802475
+        }
+    },
+    "2021-12": {
+        "Adelaide": {
+            "houses_final": 728342,
+            "houses_prelim": 731547,
+            "units_final": 372016,
+            "units_prelim": 380349
+        },
+        "Brisbane": {
+            "houses_final": 806117,
+            "houses_prelim": 792065,
+            "units_final": 423791,
+            "units_prelim": 416033
+        },
+        "Canberra": {
+            "houses_final": 1134678,
+            "houses_prelim": 1178364,
+            "units_final": 561624,
+            "units_prelim": 555644
+        },
+        "Combined Capitals": {
+            "houses_final": 1062537,
+            "houses_prelim": 1066133,
+            "units_final": 623375,
+            "units_prelim": 621880
+        },
+        "Darwin": {
+            "houses_final": 647156,
+            "houses_prelim": 645487,
+            "units_final": 387530,
+            "units_prelim": 326159
+        },
+        "Hobart": {
+            "houses_final": 727099,
+            "houses_prelim": 752110,
+            "units_final": 585856,
+            "units_prelim": NaN
+        },
+        "Melbourne": {
+            "houses_final": 1099419,
+            "houses_prelim": 1101612,
+            "units_final": 591842,
+            "units_prelim": 593387
+        },
+        "Perth": {
+            "houses_final": 612926,
+            "houses_prelim": 612348,
+            "units_final": 369834,
+            "units_prelim": 380353
+        },
+        "Sydney": {
+            "houses_final": 1588423,
+            "houses_prelim": 1601467,
+            "units_final": 806302,
+            "units_prelim": 802255
+        }
+    },
+    "2022-03": {
+        "Adelaide": {
+            "houses_final": 765833,
+            "houses_prelim": 750084,
+            "units_final": 383643,
+            "units_prelim": 376977
+        },
+        "Brisbane": {
+            "houses_final": 838599,
+            "houses_prelim": 831346,
+            "units_final": 442068,
+            "units_prelim": 437034
+        },
+        "Canberra": {
+            "houses_final": 1133918,
+            "houses_prelim": 1124952,
+            "units_final": 574724,
+            "units_prelim": 564984
+        },
+        "Combined Capitals": {
+            "houses_final": 1074676,
+            "houses_prelim": 1069289,
+            "units_final": 617699,
+            "units_prelim": 616942
+        },
+        "Darwin": {
+            "houses_final": 630046,
+            "houses_prelim": 635389,
+            "units_final": 378735,
+            "units_prelim": 385728
+        },
+        "Hobart": {
+            "houses_final": 760166,
+            "houses_prelim": 758141,
+            "units_final": 553358,
+            "units_prelim": 572568
+        },
+        "Melbourne": {
+            "houses_final": 1084383,
+            "houses_prelim": 1092144,
+            "units_final": 577504,
+            "units_prelim": 578775
+        },
+        "Perth": {
+            "houses_final": 643233,
+            "houses_prelim": 622030,
+            "units_final": 361000,
+            "units_prelim": 358366
+        },
+        "Sydney": {
+            "houses_final": 1595797,
+            "houses_prelim": 1590932,
+            "units_final": 796015,
+            "units_prelim": 796524
+        }
+    },
+    "2022-06": {
+        "Adelaide": {
+            "houses_final": 790100,
+            "houses_prelim": 793220,
+            "units_final": 406254,
+            "units_prelim": 398921
+        },
+        "Brisbane": {
+            "houses_final": 847374,
+            "houses_prelim": 840594,
+            "units_final": 451905,
+            "units_prelim": 448383
+        },
+        "Canberra": {
+            "houses_final": 1163851,
+            "houses_prelim": 1154535,
+            "units_final": 598095,
+            "units_prelim": 599735
+        },
+        "Combined Capitals": {
+            "houses_final": 1065186,
+            "houses_prelim": 1065447,
+            "units_final": 615054,
+            "units_prelim": 618542
+        },
+        "Darwin": {
+            "houses_final": 649178,
+            "houses_prelim": 632071,
+            "units_final": 382937,
+            "units_prelim": 390265
+        },
+        "Hobart": {
+            "houses_final": 760783,
+            "houses_prelim": 766010,
+            "units_final": 533667,
+            "units_prelim": 555884
+        },
+        "Melbourne": {
+            "houses_final": 1075008,
+            "houses_prelim": 1074369,
+            "units_final": 580333,
+            "units_prelim": 579532
+        },
+        "Perth": {
+            "houses_final": 656058,
+            "houses_prelim": 651956,
+            "units_final": 365674,
+            "units_prelim": 356904
+        },
+        "Sydney": {
+            "houses_final": 1544145,
+            "houses_prelim": 1552015,
+            "units_final": 778884,
+            "units_prelim": 790983
+        }
+    },
+    "2022-09": {
+        "Adelaide": {
+            "houses_final": 781948,
+            "houses_prelim": 795093,
+            "units_final": 407183,
+            "units_prelim": 416410
+        },
+        "Brisbane": {
+            "houses_final": 815874,
+            "houses_prelim": 811312,
+            "units_final": 449980,
+            "units_prelim": 451905
+        },
+        "Canberra": {
+            "houses_final": 1098361,
+            "houses_prelim": 1096114,
+            "units_final": 586220,
+            "units_prelim": 572824
+        },
+        "Combined Capitals": {
+            "houses_final": 1015893,
+            "houses_prelim": 1022194,
+            "units_final": 601367,
+            "units_prelim": 599082
+        },
+        "Darwin": {
+            "houses_final": 626035,
+            "houses_prelim": 623819,
+            "units_final": 365196,
+            "units_prelim": 364192
+        },
+        "Hobart": {
+            "houses_final": 732986,
+            "houses_prelim": 741275,
+            "units_final": 560291,
+            "units_prelim": 549135
+        },
+        "Melbourne": {
+            "houses_final": 1025355,
+            "houses_prelim": 1028452,
+            "units_final": 562556,
+            "units_prelim": 561121
+        },
+        "Perth": {
+            "houses_final": 651207,
+            "houses_prelim": 645946,
+            "units_final": 368598,
+            "units_prelim": 356755
+        },
+        "Sydney": {
+            "houses_final": 1443265,
+            "houses_prelim": 1464371,
+            "units_final": 757626,
+            "units_prelim": 754812
+        }
+    },
+    "2022-12": {
+        "Adelaide": {
+            "houses_prelim": 783705,
+            "units_prelim": 422080
+        },
+        "Brisbane": {
+            "houses_prelim": 801449,
+            "units_prelim": 444623
+        },
+        "Canberra": {
+            "houses_prelim": 1095587,
+            "units_prelim": 567888
+        },
+        "Combined Capitals": {
+            "houses_prelim": 1008988,
+            "units_prelim": 596771
+        },
+        "Darwin": {
+            "houses_prelim": 646835,
+            "units_prelim": 386678
+        },
+        "Hobart": {
+            "houses_prelim": 737650,
+            "units_prelim": 542970
+        },
+        "Melbourne": {
+            "houses_prelim": 1032903,
+            "units_prelim": 561463
+        },
+        "Perth": {
+            "houses_prelim": 658270,
+            "units_prelim": 367186
+        },
+        "Sydney": {
+            "houses_prelim": 1413658,
+            "units_prelim": 748422
+        }
+    }
+}
