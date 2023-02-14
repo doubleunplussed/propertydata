@@ -44,7 +44,7 @@ def get_corelogic_prices(city):
         'Perth': 'Perth (PERD)',
         'Combined Capitals': '5 Cap City Aggregate (AUSD)',
     }
-    df = pd.read_csv('../corelogic/merged.csv')
+    df = pd.read_csv('../corelogic/data.csv')
     dates = np.array([np.datetime64(d) for d in df['Date']])[::-1]
     index = np.array(df[keys[city]])[::-1]
     return dates, index

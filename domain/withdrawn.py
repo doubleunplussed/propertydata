@@ -109,7 +109,7 @@ def get_prices(city):
         'Brisbane': 'Brisbane inc Gold Coast (BRID)',
         'Adelaide': 'Adelaide (ADED)',
     }
-    df = pd.read_csv('../corelogic/merged.csv')
+    df = pd.read_csv('../corelogic/data.csv')
     dates = np.array([np.datetime64(d) for d in df['Date']])[::-1]
     index = np.array(df[keys[city]])[::-1]
     return dates, index
@@ -118,7 +118,7 @@ def get_prices(city):
 def get_national_prices():
     import pandas as pd
 
-    df = pd.read_csv('../corelogic/merged.csv')
+    df = pd.read_csv('../corelogic/data.csv')
     dates = np.array([np.datetime64(d) for d in df['Date']])[::-1]
     index = np.array(df['5 Cap City Aggregate (AUSD)'])[::-1]
     return dates, index

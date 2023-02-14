@@ -47,11 +47,11 @@ plt.figure()
 CITY = '5-city aggregate'
 DROP = 10
 
-# CITY = 'Sydney'
-# DROP = 40
+CITY = 'Sydney'
+DROP = 40
 
 SMOOTHED = False
-# SMOOTHED = True
+SMOOTHED = True
 
 index = data[CITY]
 

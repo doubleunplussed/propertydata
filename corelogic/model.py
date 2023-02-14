@@ -252,6 +252,11 @@ aprarates_actual = {
     '2022-01-01': 3.00,
 }
 
+aprarates_100bps_mar = {
+    '2022-01-01': 3.00,
+    '2023-03-01': 2.00,
+}
+
 wpirates_actual = {
     '2022-01-01': 0.65,  # 22 Mar quarter
     '2022-04-01': 0.70,  # 22 Jun quarter
@@ -296,6 +301,10 @@ model_dates, insane_index = make_model(cashrates_insane, wpirates_rba, aprarates
 
 model_dates, cashrate_385_index = make_model(
     cashrates_385, wpirates_rba | wpirates_actual, aprarates_null
+)
+
+model_dates, cashrate_385_apra100_index = make_model(
+    cashrates_385, wpirates_rba | wpirates_actual, aprarates_100bps_mar
 )
 
 model_dates, actual_index = make_model(
@@ -369,6 +378,13 @@ if CURRENT:
         color='C4',
         linestyle=':',
         label='model (cashrate to 3.85% in 25bps increments)',
+    )
+    plt.plot(
+        model_dates,
+        percent_change(ema(cashrate_385_apra100_index, tau=tau)),
+        color='C3',
+        linestyle=':',
+        label='model (cashrate to 3.85% in 25bps increments, APRA -1% in March)',
     )
 
 plt.plot(
@@ -482,6 +498,13 @@ if CURRENT:
         color='C4',
         linestyle=':',
         label='model (cashrate to 3.85% in 25bps increments)',
+    )
+    plt.plot(
+        model_dates,
+        n_day_change(ema(cashrate_385_apra100_index, tau=tau), prepend=month_before_peak),
+        color='C3',
+        linestyle=':',
+        label='model (cashrate to 3.85% in 25bps increments, APRA -1% in March)',
     )
 
 plt.plot(

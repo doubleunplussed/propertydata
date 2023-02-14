@@ -76,15 +76,28 @@ def percent_change(x):
     return 100 * (x / index_alltime_high - 1)
 
 
+def m_day_average(x):
+    ret = np.cumsum(x, dtype=float)
+    ret[M:] = ret[M:] - ret[:-M]
+    return ret / M
+
+
 dates, index = get_index_data()
 
 index_alltime_high = index[dates == np.datetime64('2022-05-07')][0]  # 176.66
 index_alltime_high = index.max()
 
 
-N = 28
+N = 30
+M = 28
+SMOOTHED = True
 
-velocity_factor = (index[30:] / index[:-30]) ** (365 / 12 / 30)
+if SMOOTHED:
+    smoothed_index = m_day_average(index)
+    velocity_factor = smoothed_index[N:] / smoothed_index[:-N]
+else:
+    velocity_factor = index[N:] / index[:-N]
+
 
 const_accel_dates, const_accel_index = const_accel_model(
     index[-1], dates[-1], velocity_factor
