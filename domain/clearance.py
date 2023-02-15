@@ -151,7 +151,7 @@ all_dates, all_rates = padNaN(dates, rates)
 price_dates, prices = get_national_prices()
 volume_dates, _, volume = get_national_reported_and_sold()
 
-plt.plot(
+lines_clearance = plt.plot(
     all_dates,
     all_rates,
     label="Weekly clearance rate" if WEEKLY else "Four-week clearance rate",
@@ -171,7 +171,7 @@ plt.ylabel("Clearance rate (%)")
 ax1 = plt.gca()
 ax2 = plt.twinx()
 price_changes = 100 * (prices[30:] / prices[:-30] - 1)
-plt.plot(
+lines_price = plt.plot(
     price_dates[30:],
     price_changes,
     color='C1',
@@ -184,7 +184,7 @@ upper = np.percentile(price_changes[price_dates[30:] > START_DATE], 75)
 middle = (lower + upper) / 2
 span = SPAN_FACTOR * (upper - lower)
 
-plt.bar(
+bars_volumes = plt.bar(
     volume_dates,
     volume / volume[volume_dates > START_DATE].max(),
     width=5,
@@ -212,7 +212,6 @@ han2, lab2 = ax2.get_legend_handles_labels()
 ax2.legend(han1 + han2, lab1 + lab2, loc='upper right')
 
 plt.tight_layout()
-
 
 for city in ['Sydney', 'Melbourne', 'Adelaide', 'Brisbane']:
     plt.figure()
