@@ -110,7 +110,7 @@ minvals = []
 latest_velocity = 100 * (velocity_factor[-1] - 1)
 latest_accel = 100 * (velocity_factor[-1] - velocity_factor[-31])
 
-for i in range(-20, 0):
+for i in range(-40, 0):
     # for i in range(-20, 0):
     const_accel_dates, const_accel_index = const_accel_model(
         index[i], dates[i], velocity_factor[:i]
