@@ -9398,18 +9398,18 @@
     },
     "2023-02-18": {
         "Adelaide": {
-            "clearance_rate": "66",
-            "passed_in": "23",
-            "reported": "70",
+            "clearance_rate": "65",
+            "passed_in": "24",
+            "reported": "72",
             "scheduled": "85",
-            "sold": "46",
+            "sold": "47",
             "withdrawn": "1"
         },
         "Brisbane": {
             "clearance_rate": "58",
             "passed_in": "21",
             "reported": "57",
-            "scheduled": "70",
+            "scheduled": "71",
             "sold": "33",
             "withdrawn": "3"
         },
@@ -9422,20 +9422,62 @@
             "withdrawn": "4"
         },
         "Melbourne": {
-            "clearance_rate": "62",
-            "passed_in": "180",
-            "reported": "642",
+            "clearance_rate": "61",
+            "passed_in": "181",
+            "reported": "644",
             "scheduled": "694",
-            "sold": "395",
+            "sold": "396",
             "withdrawn": "67"
         },
         "Sydney": {
             "clearance_rate": "69",
             "passed_in": "92",
-            "reported": "506",
+            "reported": "507",
             "scheduled": "590",
-            "sold": "350",
+            "sold": "351",
             "withdrawn": "64"
+        }
+    },
+    "2023-02-25": {
+        "Adelaide": {
+            "clearance_rate": "84",
+            "passed_in": "9",
+            "reported": "70",
+            "scheduled": "82",
+            "sold": "59",
+            "withdrawn": "2"
+        },
+        "Brisbane": {
+            "clearance_rate": "46",
+            "passed_in": "35",
+            "reported": "70",
+            "scheduled": "83",
+            "sold": "32",
+            "withdrawn": "3"
+        },
+        "Canberra": {
+            "clearance_rate": "55",
+            "passed_in": "31",
+            "reported": "82",
+            "scheduled": "97",
+            "sold": "45",
+            "withdrawn": "6"
+        },
+        "Melbourne": {
+            "clearance_rate": "65",
+            "passed_in": "237",
+            "reported": "880",
+            "scheduled": "988",
+            "sold": "573",
+            "withdrawn": "70"
+        },
+        "Sydney": {
+            "clearance_rate": "70",
+            "passed_in": "84",
+            "reported": "572",
+            "scheduled": "696",
+            "sold": "401",
+            "withdrawn": "87"
         }
     }
 }

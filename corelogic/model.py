@@ -226,9 +226,9 @@ aprarates_100bps = {
 wpirates_rba = {
     '2022-01-01': 0.65,  # 22 Mar quarter
     '2022-04-01': 0.70,  # 22 Jun Quarter
-    '2022-07-01': 1.00,  # Sep quarter
-    '2022-10-01': 1.106,  # RBA forecast from here. 22 Dec quarter
-    '2023-01-01': 0.969,  # 23 Mar and Jun quarters
+    '2022-07-01': 1.100,  # 22 Sep quarter
+    '2022-10-01': 0.800,  # 22 Dec quarter
+    '2023-01-01': 0.969,  # RBA forecast from here. 23 Mar and Jun quarters
     '2023-06-01': 1.098,  # 23 Sep and Dec quarters
     '2024-01-01': 0.921,  # 24 Mar and Jun quarters
     '2024-06-01': 1.05,  # 24 Sep and Dec quarters
@@ -260,8 +260,9 @@ aprarates_100bps_mar = {
 wpirates_actual = {
     '2022-01-01': 0.65,  # 22 Mar quarter
     '2022-04-01': 0.70,  # 22 Jun quarter
-    '2022-07-01': 1.00,  # 22 Sep quarter
-    '2022-10-01': 1.10,  # 22 Dec quarter
+    '2022-07-01': 1.10,  # 22 Sep quarter
+    '2022-10-01': 0.80,  # 22 Dec quarter
+    '2023-01-01': 0.969,  # forecast
 }
 
 
@@ -278,6 +279,7 @@ cashrates_385 = {
     '2023-02-07': 3.35,
     '2023-03-07': 3.60,
     '2023-04-04': 3.85,
+    # '2023-05-02': 4.10,
 }
 
 model_dates, ib_model_index = make_model(cashrates_ib, wpirates_rba, aprarates_null)

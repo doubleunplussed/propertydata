@@ -54,7 +54,7 @@ def get_corelogic_prices(city):
 
 # Whether to plot Domain data by publication date, or by contract date
 DATE_SCHEME = "publication"
-DATE_SCHEME = "contract"
+# DATE_SCHEME = "contract"
 
 if DATE_SCHEME == "publication":
     DOMAIN_PRELIM_OFFSET = 30 + 25
@@ -71,21 +71,52 @@ for CITY in [
     # "Brisbane",
     # "Perth",
 ]:
-    dates_prelim, houses_prelim, _ = get_prices(CITY, prelim=True)
-    dates_final, houses_final, _ = get_prices(CITY, prelim=False)
+    dates_prelim, houses_prelim, units_prelim = get_prices(CITY, prelim=True)
+    dates_final, houses_final, units_final = get_prices(CITY, prelim=False)
+
+    HOUSES_FRAC = 0.726 # 72.6% of dwellings are houses
+    combined_prelim = HOUSES_FRAC * houses_prelim + (1 - HOUSES_FRAC) * units_prelim 
+    combined_final = HOUSES_FRAC * houses_final + (1 - HOUSES_FRAC) * units_final 
+
     corelogic_dates, corelogic_index = get_corelogic_prices(CITY)
 
-    corelogic_prices = corelogic_index * houses_final.max() / corelogic_index.max() 
+    corelogic_prices = (
+        corelogic_index * np.nanmax(combined_final) / corelogic_index.max()
+    )
+
+    # plt.plot(
+    #     dates_prelim.astype('datetime64[D]') + DOMAIN_PRELIM_OFFSET,
+    #     houses_prelim / 1000,
+    #     label="Domain houses prelim",
+    # )
+
+    # plt.plot(
+    #     dates_final.astype('datetime64[D]') + DOMAIN_FINAL_OFFSET,
+    #     houses_final / 1000,
+    #     label="Domain houses final",
+    # )
+
+    # plt.plot(
+    #     dates_prelim.astype('datetime64[D]') + DOMAIN_PRELIM_OFFSET,
+    #     units_prelim / 1000,
+    #     label="Domain units prelim",
+    # )
+
+    # plt.plot(
+    #     dates_final.astype('datetime64[D]') + DOMAIN_FINAL_OFFSET,
+    #     units_final / 1000,
+    #     label="Domain units final",
+    # )
 
     plt.plot(
         dates_prelim.astype('datetime64[D]') + DOMAIN_PRELIM_OFFSET,
-        houses_prelim / 1000,
+        combined_prelim / 1000,
         label="Domain prelim",
     )
 
     plt.plot(
         dates_final.astype('datetime64[D]') + DOMAIN_FINAL_OFFSET,
-        houses_final / 1000,
+        combined_final / 1000,
         label="Domain final",
     )
 
@@ -103,16 +134,43 @@ for CITY in [
     houses_prelim_change = 100 * ((houses_prelim[1:] / houses_prelim[:-1]) - 1)
     houses_final_change = 100 * ((houses_final[1:] / houses_final[:-1]) - 1)
 
+    units_prelim_change = 100 * ((units_prelim[1:] / units_prelim[:-1]) - 1)
+    units_final_change = 100 * ((units_final[1:] / units_final[:-1]) - 1)
+
+    combined_prelim_change = 100 * ((combined_prelim[1:] / combined_prelim[:-1]) - 1)
+    combined_final_change = 100 * ((combined_final[1:] / combined_final[:-1]) - 1)
+      
+    # plt.plot(
+    #     dates_prelim[1:].astype('datetime64[D]') + DOMAIN_PRELIM_OFFSET,
+    #     houses_prelim_change,
+    #     label="Domain houses prelim",
+    # )
+    # plt.plot(
+    #     dates_final[1:].astype('datetime64[D]') + DOMAIN_FINAL_OFFSET,
+    #     houses_final_change,
+    #     label="Domain houses final",
+    # )
+    # plt.plot(
+    #     dates_prelim[1:].astype('datetime64[D]') + DOMAIN_PRELIM_OFFSET,
+    #     units_prelim_change,
+    #     label="Domain units prelim",
+    # )
+    # plt.plot(
+    #     dates_final[1:].astype('datetime64[D]') + DOMAIN_FINAL_OFFSET,
+    #     units_final_change,
+    #     label="Domain units final",
+    # )
     plt.plot(
         dates_prelim[1:].astype('datetime64[D]') + DOMAIN_PRELIM_OFFSET,
-        houses_prelim_change,
+        combined_prelim_change,
         label="Domain prelim",
     )
-    plt.plot(
-        dates_final[1:].astype('datetime64[D]') + DOMAIN_FINAL_OFFSET,
-        houses_final_change,
-        label="Domain final",
-    )
+    # plt.plot(
+    #     dates_final[1:].astype('datetime64[D]') + DOMAIN_FINAL_OFFSET,
+    #     combined_final_change,
+    #     label="Domain final",
+    # )
+
     corelogic_price_changes = 100 * (corelogic_index[90:] / corelogic_index[:-90] - 1)
     plt.plot(
         corelogic_dates[90:],
@@ -123,6 +181,7 @@ for CITY in [
 
     plt.ylabel("QoQ change (%)")
     plt.title(f"{CITY} Domain stratified median vs CoreLogic hedonic")
+    # plt.title(f"{CITY} Domain stratified median houses and units")
     plt.grid(True, color='k', linestyle=":", alpha=0.5)
     plt.legend()
     plt.tight_layout()

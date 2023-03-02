@@ -134,19 +134,21 @@ plt.figure(figsize=(7, 6))
 START_IX = dates.searchsorted(np.datetime64('2020-04-22'))
 # START_IX = dates.searchsorted(np.datetime64('2020-01-01'))
 START_IX = 0
-# START_IX = dates.searchsorted(np.datetime64('2020-10-13'))
+START_IX = dates.searchsorted(np.datetime64('2018-01-01'))
 
 for city, index in data.items():
-        referenced = 100 * index[START_IX:] / index[START_IX]
-        plt.plot(
-            dates[START_IX:],
-            # index,
-            referenced,
-            linewidth=3,
-            # color='k',
-            label=f'{city} ({referenced[-1] - 100:+.1f}%)',
-            alpha=0.7,
-        )
+    referenced = 100 * index[START_IX:] / index[START_IX]
+    plt.plot(
+        dates[START_IX:],
+        # index,
+        referenced,
+        linewidth=3,
+        # color='k',
+        label=f'{city} ({referenced[-1] - 100:+.1f}%)',
+        alpha=0.7,
+    )
+
+# plt.plot([np.datetime64('2023-02-11'), np.datetime64('2023-03-11')], [185.92] * 2, 'ko')
 
 plt.axhline(100, color='k')
 plt.title(f'CoreLogic indices (indexed to 100 on {dates[START_IX]})')
