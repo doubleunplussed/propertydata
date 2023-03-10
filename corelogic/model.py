@@ -246,6 +246,7 @@ cashrates_actual = {
     '2022-11-01': 2.85,
     '2022-12-06': 3.10,
     '2023-02-07': 3.35,
+    '2023-03-07': 3.60,
 }
 
 aprarates_actual = {
@@ -305,9 +306,9 @@ model_dates, cashrate_385_index = make_model(
     cashrates_385, wpirates_rba | wpirates_actual, aprarates_null
 )
 
-model_dates, cashrate_385_apra100_index = make_model(
-    cashrates_385, wpirates_rba | wpirates_actual, aprarates_100bps_mar
-)
+# model_dates, cashrate_385_apra100_index = make_model(
+#     cashrates_385, wpirates_rba | wpirates_actual, aprarates_100bps_mar
+# )
 
 model_dates, actual_index = make_model(
     cashrates_actual, wpirates_actual, aprarates_actual
@@ -381,13 +382,13 @@ if CURRENT:
         linestyle=':',
         label='model (cashrate to 3.85% in 25bps increments)',
     )
-    plt.plot(
-        model_dates,
-        percent_change(ema(cashrate_385_apra100_index, tau=tau)),
-        color='C3',
-        linestyle=':',
-        label='model (cashrate to 3.85% in 25bps increments, APRA -1% in March)',
-    )
+    # plt.plot(
+    #     model_dates,
+    #     percent_change(ema(cashrate_385_apra100_index, tau=tau)),
+    #     color='C3',
+    #     linestyle=':',
+    #     label='model (cashrate to 3.85% in 25bps increments, APRA -1% in March)',
+    # )
 
 plt.plot(
     model_dates[model_dates <= dates.max()],
@@ -501,13 +502,13 @@ if CURRENT:
         linestyle=':',
         label='model (cashrate to 3.85% in 25bps increments)',
     )
-    plt.plot(
-        model_dates,
-        n_day_change(ema(cashrate_385_apra100_index, tau=tau), prepend=month_before_peak),
-        color='C3',
-        linestyle=':',
-        label='model (cashrate to 3.85% in 25bps increments, APRA -1% in March)',
-    )
+    # plt.plot(
+    #     model_dates,
+    #     n_day_change(ema(cashrate_385_apra100_index, tau=tau), prepend=month_before_peak),
+    #     color='C3',
+    #     linestyle=':',
+    #     label='model (cashrate to 3.85% in 25bps increments, APRA -1% in March)',
+    # )
 
 plt.plot(
     model_dates[model_dates <= dates.max()],
@@ -535,7 +536,7 @@ plt.axvline(
     label=f"date of forecast ({DATE_OF_FORECAST})",
 )
 plt.grid(True, color='k', linestyle="-", alpha=0.25)
-plt.ylabel('30-day change (%) (smoothed)')
+plt.ylabel('30-day change (%)')
 plt.legend(loc='upper right', prop={'size': 9})
 plt.axis(
     # xmin=dates.min() + 30,

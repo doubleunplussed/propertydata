@@ -9479,5 +9479,47 @@
             "sold": "401",
             "withdrawn": "87"
         }
+    },
+    "2023-03-04": {
+        "Adelaide": {
+            "clearance_rate": "69",
+            "passed_in": "20",
+            "reported": "77",
+            "scheduled": "82",
+            "sold": "53",
+            "withdrawn": "4"
+        },
+        "Brisbane": {
+            "clearance_rate": "61",
+            "passed_in": "19",
+            "reported": "56",
+            "scheduled": "65",
+            "sold": "34",
+            "withdrawn": "3"
+        },
+        "Canberra": {
+            "clearance_rate": "46",
+            "passed_in": "25",
+            "reported": "54",
+            "scheduled": "66",
+            "sold": "25",
+            "withdrawn": "4"
+        },
+        "Melbourne": {
+            "clearance_rate": "67",
+            "passed_in": "176",
+            "reported": "729",
+            "scheduled": "795",
+            "sold": "485",
+            "withdrawn": "68"
+        },
+        "Sydney": {
+            "clearance_rate": "68",
+            "passed_in": "88",
+            "reported": "550",
+            "scheduled": "674",
+            "sold": "373",
+            "withdrawn": "89"
+        }
     }
 }

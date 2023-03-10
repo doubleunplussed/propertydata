@@ -29,7 +29,7 @@ PASSED_IN = 'data-label="Passed in"'
 # for, and FIRST_DATE to a couple of weeks prior to whenever the data was last scraped.
 
 
-LAST_DATE = np.datetime64('2023-02-25')
+LAST_DATE = np.datetime64('2023-03-04')
 # FIRST_DATE = np.datetime64("2018-04-07")
 FIRST_DATE = LAST_DATE - 5 * 7
 
