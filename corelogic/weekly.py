@@ -43,7 +43,7 @@ for city in data:
         percent_change = 100 * (end_index / start_index - 1)
 
         changes.append(percent_change)
-    plt.bar(week_ending, changes, width=0.8 * N)
+    plt.bar(week_ending, changes, width=N)
     # plt.bar(week_ending[6::7], changes[6::7], width=N, color='r')
     plt.grid(True, color='k', linestyle="-", alpha=0.25)
     plt.axis(xmin=np.datetime64('2022-01-01'))

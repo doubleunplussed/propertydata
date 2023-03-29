@@ -99,7 +99,7 @@ for city in ['Sydney', '5-city aggregate', 'Melbourne', 'Brisbane', 'Adelaide', 
         print(f"{city} 2022-{m:02d}: {percent_change:+.2f}%")
 
     bars = plt.bar(np.arange(len(months)), changes, tick_label=months)
-    plt.bar_label(bars, fmt="%+.1f%%", padding=2, fontsize=9)
+    plt.bar_label(bars, fmt="%.1f%%", padding=2, fontsize=9)
     # plt.grid(True, color='k', linestyle="-", alpha=0.25)
     plt.axhline(0, color='k')
     plt.ylabel('monthly change (%)')

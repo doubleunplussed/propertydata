@@ -135,7 +135,7 @@ plt.figure(figsize=(7, 6))
 START_IX = dates.searchsorted(np.datetime64('2020-04-22'))
 # START_IX = dates.searchsorted(np.datetime64('2020-01-01'))
 START_IX = 0
-# START_IX = dates.searchsorted(np.datetime64('2018-01-01'))
+START_IX = dates.searchsorted(np.datetime64('2018-01-01'))
 
 for city, index in data.items():
     referenced = 100 * index[START_IX:] / index[START_IX]

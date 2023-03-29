@@ -279,7 +279,7 @@ cashrates_385 = {
     '2022-12-06': 3.10,
     '2023-02-07': 3.35,
     '2023-03-07': 3.60,
-    '2023-04-04': 3.85,
+    # '2023-04-04': 3.85,
     # '2023-05-02': 4.10,
 }
 
@@ -380,7 +380,7 @@ if CURRENT:
         percent_change(ema(cashrate_385_index, tau=tau)),
         color='C4',
         linestyle=':',
-        label='model (cashrate to 3.85% in 25bps increments)',
+        label='model (cashrate held at 3.6%)',
     )
     # plt.plot(
     #     model_dates,

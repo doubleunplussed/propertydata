@@ -154,7 +154,8 @@ volume_dates, _, volume = get_national_reported_and_sold()
 lines_clearance = plt.plot(
     all_dates,
     all_rates,
-    label="Weekly clearance rate" if WEEKLY else "Four-week clearance rate",
+    label=("Weekly clearance rate" if WEEKLY else "Four-week clearance rate")
+    + f" ({all_rates[-1]:.0f}%)",
 )
 lower = np.percentile(rates[dates > START_DATE], 25)
 upper = np.percentile(rates[dates > START_DATE], 75)
@@ -175,7 +176,7 @@ lines_price = plt.plot(
     price_dates[30:],
     price_changes,
     color='C1',
-    label="30-day price change",
+    label=f"30-day price change ({price_changes[-1]:+.1f}%)",
 )
 
 
@@ -187,7 +188,7 @@ span = SPAN_FACTOR * (upper - lower)
 bars_volumes = plt.bar(
     volume_dates,
     volume / volume[volume_dates > START_DATE].max(),
-    width=5,
+    width=7,
     bottom=middle - span,
     color="C2",
     label="Weekly volume",
@@ -222,7 +223,8 @@ for city in ['Sydney', 'Melbourne', 'Adelaide', 'Brisbane']:
     plt.plot(
         all_dates,
         all_rates,
-        label="Weekly clearance rate" if WEEKLY else "Four-week clearance rate",
+        label=("Weekly clearance rate" if WEEKLY else "Four-week clearance rate")
+        + f" ({all_rates[-1]:.0f}%)",
     )
 
     lower = np.percentile(rates[dates > START_DATE], 25)
@@ -240,11 +242,12 @@ for city in ['Sydney', 'Melbourne', 'Adelaide', 'Brisbane']:
 
     ax1 = plt.gca()
     ax2 = plt.twinx()
+    price_changes = 100 * (prices[30:] / prices[:-30] - 1)
     plt.plot(
         price_dates[30:],
-        100 * (prices[30:] / prices[:-30] - 1),
+        price_changes,
         color='C1',
-        label="30-day price change",
+        label=f"30-day price change ({price_changes[-1]:+.1f}%)",
     )
 
     lower = np.percentile(price_changes[price_dates[30:] > START_DATE], 25)
@@ -255,7 +258,7 @@ for city in ['Sydney', 'Melbourne', 'Adelaide', 'Brisbane']:
     plt.bar(
         volume_dates,
         volume / volume[volume_dates > START_DATE].max(),
-        width=5,
+        width=7,
         bottom=middle - span,
         color="C2",
         label="Weekly volume",
