@@ -247,6 +247,9 @@ cashrates_actual = {
     '2022-12-06': 3.10,
     '2023-02-07': 3.35,
     '2023-03-07': 3.60,
+    '2023-05-02': 3.85,
+    '2023-06-06': 4.10,
+    '2023-07-04': 4.10,
 }
 
 aprarates_actual = {
@@ -267,7 +270,7 @@ wpirates_actual = {
 }
 
 
-cashrates_385 = {
+cashrates_460 = {
     '2022-01-01': 0.10,
     '2022-05-03': 0.35,
     '2022-06-07': 0.85,
@@ -279,8 +282,11 @@ cashrates_385 = {
     '2022-12-06': 3.10,
     '2023-02-07': 3.35,
     '2023-03-07': 3.60,
-    # '2023-04-04': 3.85,
-    # '2023-05-02': 4.10,
+    '2023-04-04': 3.60,
+    '2023-05-02': 3.85,
+    '2023-06-06': 4.10,
+    '2023-07-04': 4.35,
+    '2023-08-01': 4.60,
 }
 
 model_dates, ib_model_index = make_model(cashrates_ib, wpirates_rba, aprarates_null)
@@ -302,8 +308,8 @@ model_dates, cba_apra100_model_index = make_model(
 
 model_dates, insane_index = make_model(cashrates_insane, wpirates_rba, aprarates_null)
 
-model_dates, cashrate_385_index = make_model(
-    cashrates_385, wpirates_rba | wpirates_actual, aprarates_null
+model_dates, cashrate_460_index = make_model(
+    cashrates_460, wpirates_rba | wpirates_actual, aprarates_null
 )
 
 # model_dates, cashrate_385_apra100_index = make_model(
@@ -377,10 +383,10 @@ if INSANE:
 if CURRENT:
     plt.plot(
         model_dates,
-        percent_change(ema(cashrate_385_index, tau=tau)),
+        percent_change(ema(cashrate_460_index, tau=tau)),
         color='C4',
         linestyle=':',
-        label='model (cashrate held at 3.6%)',
+        label='model (cashrate held at 3.85%)',
     )
     # plt.plot(
     #     model_dates,
@@ -497,10 +503,10 @@ if INSANE:
 if CURRENT:
     plt.plot(
         model_dates,
-        n_day_change(ema(cashrate_385_index, tau=tau), prepend=month_before_peak),
+        n_day_change(ema(cashrate_460_index, tau=tau), prepend=month_before_peak),
         color='C4',
         linestyle=':',
-        label='model (cashrate to 3.85% in 25bps increments)',
+        label='model (cashrate to 4.60%)',
     )
     # plt.plot(
     #     model_dates,
@@ -547,5 +553,16 @@ plt.axis(
 )
 plt.axhline(0, color='k')
 plt.title(f'Property price forecast: serviceability model with {tau}-day lag')
+
+
+feb_trough = index[dates > np.datetime64('2023-01-01')].min()
+increase_factor = index[-1] / feb_trough
+print(f"Increase since minimum: {100 * (increase_factor - 1):.3f}%")
+
+daily_factor = (index[-1] / index[-N - 1]) ** (1 / N)
+days_to_5pc = np.log(1.05 / increase_factor) / np.log(daily_factor)
+print(f"Days until 5% up from minimum: {days_to_5pc:.2f}")
+print(f"Date of 5% up from minimum: {dates[-1] +  int(days_to_5pc+1)}")
+
 
 plt.show()

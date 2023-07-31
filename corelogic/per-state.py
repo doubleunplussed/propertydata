@@ -77,9 +77,9 @@ for SMOOTHED in [True, False]:
     plt.axis(
         # xmin=dates.min() + 30,
         xmin=np.datetime64('2022-01-01'),
-        xmax=np.datetime64('2023-06-01'),
+        xmax=np.datetime64('2023-09-01'),
         ymin=-2.5,
-        ymax=3.0,
+        ymax=3.5,
     )
     plt.axhline(0, color='k')
     plt.title(f'CoreLogic indices {N}-day change')
@@ -120,7 +120,7 @@ for SMOOTHED in [True, False]:
     plt.axis(
         # xmin=dates.min() + 30,
         xmin=np.datetime64('2022-01-01'),
-        xmax=np.datetime64('2023-06-01'),
+        xmax=np.datetime64('2023-09-01'),
         ymin=-2.0,
         ymax=2.0,
     )
@@ -159,7 +159,7 @@ plt.legend(loc='upper left', prop={'size': 9})
 plt.axis(
     # xmin=dates.min() + 30,
     xmin=dates[START_IX] - 30,
-    xmax=np.datetime64('2023-06-01'),
+    xmax=np.datetime64('2023-09-01'),
     # ymin=-2.0,
     # ymax=2.0,
 )

@@ -163,7 +163,7 @@ middle = (lower + upper) / 2
 span = SPAN_FACTOR * (upper - lower)
 plt.axis(
     xmin=START_DATE,
-    xmax=np.datetime64('2023-06-01'),
+    xmax=np.datetime64('2023-09-01'),
     ymin=middle - span,
     ymax=middle + span,
 )
@@ -234,7 +234,7 @@ for city in ['Sydney', 'Melbourne', 'Adelaide', 'Brisbane']:
 
     plt.axis(
         xmin=START_DATE,
-        xmax=np.datetime64('2023-06-01'),
+        xmax=np.datetime64('2023-09-01'),
         ymin=middle - span,
         ymax=middle + span,
     )

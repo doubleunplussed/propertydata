@@ -38,6 +38,11 @@ months = [
     'Jan\n2023',
     'Feb',
     'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+#     'Aug',
 ]
 
 
@@ -104,6 +109,7 @@ for city in ['Sydney', '5-city aggregate', 'Melbourne', 'Brisbane', 'Adelaide', 
     plt.axhline(0, color='k')
     plt.ylabel('monthly change (%)')
     plt.title(f"CoreLogic {city} index monthly change")
+    plt.savefig(f'{city}.png')
 
 plt.show()
 

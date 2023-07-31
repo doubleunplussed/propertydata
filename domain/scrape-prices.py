@@ -29,7 +29,7 @@ CITIES = [
     'Combined Capitals',
 ]
 
-LAST_DATE = np.datetime64('2022-12')
+LAST_DATE = np.datetime64('2023-03')
 FIRST_DATE = np.datetime64("2017-03")
 
 DATAFILE = Path('pricedata.json')

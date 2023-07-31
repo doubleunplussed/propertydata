@@ -83,7 +83,7 @@ def padNaN(dates, rates):
 
 # If WEEKY is True, then we show the weekly withdrawn rate, rather than the 4-week rate
 WEEKLY = False
-# WEEKLY = True
+WEEKLY = True
 
 START_DATE = np.datetime64('2021-01-01')
 # START_DATE = np.datetime64('2022-01-01')
@@ -93,6 +93,8 @@ SPAN_FACTOR = 1.5
 # SPAN_FACTOR = 2.0
 
 dates, rates = get_national_four_week_reported_rate()
+dates = dates[:-1]
+rates = rates[:-1]
 all_dates, all_rates = padNaN(dates, rates)
 price_dates, prices = get_national_prices()
 volume_dates, _, volume = get_national_reported_and_sold()
@@ -108,53 +110,54 @@ middle = (lower + upper) / 2
 span = SPAN_FACTOR * (upper - lower)
 plt.axis(
     xmin=START_DATE,
-    xmax=np.datetime64('2023-06-01'),
+    xmax=np.datetime64('2023-09-01'),
     ymin=0,
     ymax=100,
 )
 plt.ylabel("Reported rate (%)")
 
 ax1 = plt.gca()
-ax2 = plt.twinx()
+# ax2 = plt.twinx()
 price_changes = 100 * (prices[30:] / prices[:-30] - 1)
-plt.plot(
-    price_dates[30:],
-    price_changes,
-    color='C1',
-    label="30-day price change",
-)
+# plt.plot(
+#     price_dates[30:],
+#     price_changes,
+#     color='C1',
+#     label="30-day price change",
+# )
 
 
-lower = np.percentile(price_changes[price_dates[30:] > START_DATE], 25)
-upper = np.percentile(price_changes[price_dates[30:] > START_DATE], 75)
-middle = (lower + upper) / 2
-span = SPAN_FACTOR * (upper - lower)
+# lower = np.percentile(price_changes[price_dates[30:] > START_DATE], 25)
+# upper = np.percentile(price_changes[price_dates[30:] > START_DATE], 75)
+# middle = (lower + upper) / 2
+# span = SPAN_FACTOR * (upper - lower)
 
-plt.bar(
-    volume_dates,
-    volume / volume[volume_dates > START_DATE].max(),
-    width=5,
-    bottom=middle - span,
-    color="C2",
-    label="Weekly volume",
-)
+# plt.bar(
+#     volume_dates,
+#     volume / volume[volume_dates > START_DATE].max(),
+#     width=5,
+#     bottom=middle - span,
+#     color="C2",
+#     label="Weekly volume",
+# )
 
-plt.axis(
-    ymin=middle - span,
-    ymax=middle + span,
-)
-plt.ylabel("30-day price change (%)")
+# plt.axis(
+#     ymin=middle - span,
+#     ymax=middle + span,
+# )
+# plt.ylabel("30-day price change (%)")
 plt.title(
     "\n".join(
         [
             f"Domain {'weekly' if WEEKLY else 'four-week'} auction reported rate",
-            "vs CoreLogic 5-capital cities index 30-day change",
+            # "vs CoreLogic 5-capital cities index 30-day change",
         ]
     )
 )
-han1, lab1 = ax1.get_legend_handles_labels()
-han2, lab2 = ax2.get_legend_handles_labels()
-ax2.legend(han1 + han2, lab1 + lab2, loc='center right')
+# han1, lab1 = ax1.get_legend_handles_labels()
+# han2, lab2 = ax2.get_legend_handles_labels()
+# ax1.legend(han1 + han2, lab1 + lab2, loc='center right')
+plt.legend()
 
 plt.tight_layout()
 
