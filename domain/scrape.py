@@ -29,9 +29,9 @@ PASSED_IN = 'data-label="Passed in"'
 # for, and FIRST_DATE to a couple of weeks prior to whenever the data was last scraped.
 
 
-LAST_DATE = np.datetime64('2023-07-29')
+LAST_DATE = np.datetime64('2023-10-14')
 # FIRST_DATE = np.datetime64("2018-04-07")
-FIRST_DATE = LAST_DATE - 5 * 7
+FIRST_DATE = LAST_DATE - 26 * 7
 
 DATAFILE = Path('data.json')
 HTMLDIR = Path('html')

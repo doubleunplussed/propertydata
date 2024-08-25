@@ -21,11 +21,12 @@ def download_data(date):
     csv = Path(f"csv/{basename}.csv")
     url = f"https://download.rpdata.com/asx/{basename}.xlsx"
     print(url)
-    if not csv.exists():
+    if not xlsx.exists():
         try:
             subprocess.check_call(['curl', '--fail', url, '-o', xlsx])
         except subprocess.CalledProcessError:
             return None
+    if not csv.exists():
         subprocess.check_call(['xlsx2csv', '--dateformat', '%Y-%m-%d', xlsx, csv])
     return csv
 
@@ -41,6 +42,14 @@ def download_latest():
     return np.datetime64(date, 'D'), csv
 
 
+def _convert_date(line):
+    if line[2] == '/':
+        # convert date format
+        d, line = line.split(',', 1)
+        d = datetime.strptime(d, '%d/%m/%Y').strftime('%Y-%m-%d')
+        line = ','.join([d, line])
+    return line
+
 def merge_csvs():
     lines = set(
         [
@@ -51,7 +60,7 @@ def merge_csvs():
     for path in Path('csv').iterdir():
         lines.update(
             [
-                l.strip()
+                _convert_date(l.strip().rstrip(','))
                 for l in path.read_text().splitlines()
                 if l.strip() and l[0].isdigit()
             ]

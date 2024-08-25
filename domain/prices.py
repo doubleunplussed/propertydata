@@ -84,17 +84,17 @@ for CITY in [
         corelogic_index * np.nanmax(combined_final) / corelogic_index.max()
     )
 
-    # plt.plot(
-    #     dates_prelim.astype('datetime64[D]') + DOMAIN_PRELIM_OFFSET,
-    #     houses_prelim / 1000,
-    #     label="Domain houses prelim",
-    # )
+    plt.plot(
+        dates_prelim.astype('datetime64[D]') + DOMAIN_PRELIM_OFFSET,
+        houses_prelim / 1000,
+        label="Domain houses prelim",
+    )
 
-    # plt.plot(
-    #     dates_final.astype('datetime64[D]') + DOMAIN_FINAL_OFFSET,
-    #     houses_final / 1000,
-    #     label="Domain houses final",
-    # )
+    plt.plot(
+        dates_final.astype('datetime64[D]') + DOMAIN_FINAL_OFFSET,
+        houses_final / 1000,
+        label="Domain houses final",
+    )
 
     # plt.plot(
     #     dates_prelim.astype('datetime64[D]') + DOMAIN_PRELIM_OFFSET,
@@ -108,23 +108,23 @@ for CITY in [
     #     label="Domain units final",
     # )
 
-    plt.plot(
-        dates_prelim.astype('datetime64[D]') + DOMAIN_PRELIM_OFFSET,
-        combined_prelim / 1000,
-        label="Domain prelim",
-    )
+    # plt.plot(
+    #     dates_prelim.astype('datetime64[D]') + DOMAIN_PRELIM_OFFSET,
+    #     combined_prelim / 1000,
+    #     label="Domain prelim",
+    # )
 
-    plt.plot(
-        dates_final.astype('datetime64[D]') + DOMAIN_FINAL_OFFSET,
-        combined_final / 1000,
-        label="Domain final",
-    )
+    # plt.plot(
+    #     dates_final.astype('datetime64[D]') + DOMAIN_FINAL_OFFSET,
+    #     combined_final / 1000,
+    #     label="Domain final",
+    # )
 
-    plt.plot(
-        corelogic_dates,
-        corelogic_prices / 1000,
-        label="CoreLogic",
-    )
+    # plt.plot(
+    #     corelogic_dates,
+    #     corelogic_prices / 1000,
+    #     label="CoreLogic",
+    # )
 
     plt.ylabel("Stratified median price ($k)")
     plt.legend()
