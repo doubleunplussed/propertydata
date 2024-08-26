@@ -69,5 +69,5 @@ def merge_csvs():
 
 
 if __name__ == '__main__':
-    download_latest()
+    # download_latest()
     merge_csvs()
